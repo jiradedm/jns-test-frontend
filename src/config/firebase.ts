@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -12,7 +12,7 @@ const firebaseConfig = {
   projectId: "jenosize-test-9d706",
   storageBucket: "jenosize-test-9d706.appspot.com",
   messagingSenderId: "24127279582",
-  appId: "1:24127279582:web:a5081462c95f6db8b80d4f"
+  appId: "1:24127279582:web:a5081462c95f6db8b80d4f",
 };
 
 // Initialize Firebase
