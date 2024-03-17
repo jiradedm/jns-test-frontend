@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import type { FC } from "react";
 
-import { useGeneralStore } from "@/store";
+import { useReportStore } from "@/store";
 
 interface Place {
   displayName: {
@@ -32,7 +32,7 @@ const PlaceComponent: FC<PlaceProps> = ({ place }) => {
 };
 
 export default function PlacePage() {
-  const { searchText } = useGeneralStore();
+  const { searchText } = useReportStore();
 
   const places = useQuery({
     queryKey: ["place", searchText],

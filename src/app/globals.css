@@ -9,3 +9,7 @@ button {
 input {
   @apply border border-black px-1;
 }
+
+.dM {
+  @apply py-0 !important;
+}

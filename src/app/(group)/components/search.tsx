@@ -1,11 +1,11 @@
 import type { FC } from "react";
 import React, { useState } from "react";
 
-import { useGeneralStore } from "@/store";
+import { useReportStore } from "@/store";
 
 const Search: FC = () => {
   const [value, setValue] = useState("");
-  const { setSearchText } = useGeneralStore();
+  const { setSearchText } = useReportStore();
 
   return (
     <div className="flex h-full flex-col justify-end">
