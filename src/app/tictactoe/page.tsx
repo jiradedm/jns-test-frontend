@@ -67,7 +67,9 @@ export default function TicTacToePage() {
 
   const updateBoard = useMutation<Board[], Error, Board[]>({
     mutationFn: async (data) => {
-      const res = await axios.post("http://localhost:3001/xo", { board: data });
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_API}/xo`, {
+        board: data,
+      });
       return res.data;
     },
     onSuccess: (data) => {
