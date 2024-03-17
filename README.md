@@ -1,6 +1,9 @@
 ## Route
-Front Edn Place => /place
+Firebase Auth: "/"
 
-Front End Report => /report
+Place: "/place"
 
-Firebase Auth => /
+Tic Tac Toe: "/tictactoe"
+
+Report => /report
+
